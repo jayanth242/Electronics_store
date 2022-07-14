@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> About Us </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<nav class="nav nav_top">  <!--FIXING NAVIGATION BAR -->
+		<div class="logo">
+			<a href="index.html"><img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" width="150"></a>
+		</div>
+	
+		<div class="nav_side">
+			<a href="about.html">About US</a>
+			<a href="service.html">Services</a>
+			<a href="blog.html">Blog</a>
+			<a href="contact.html">Contact</a>
+			<a href=" ">Login/Register</a>
+			
+			
+		</div>
+	</nav>
+
+	<div class="about-us">
+		<h2> About Us </h2>
+		<div class="about-content">
+			<p>A visionary entrepreneur with keen business savvy and foresight, Mr. Pawan Bajaj founded Bajaj Electronics in 1980 with the principle of providing quality and service to its guests.
+
+				The awe-inspiring journey that began with a small electronics showroom at Lakidikapul in 1980, Bajaj Electronics has since evolved and has become the most trusted electronics retail chain in South India. We earned the trust of the locals and grew from strength to strength,  to what is now a chain of the most genuine electronic stores across Telangana and Andhra Pradesh, offering quality service at the best price. There are now 99 aesthetically designed and conveniently located showrooms in cities like Hyderabad, Vishakhapatnam, Nalgonda, Kurnool, Warangal, Tirupati, Vijayawada, Rajahmundry, and Guntur where you can shop for the latest in electronics.
+				
+				Our portfolio includes product lines that range from affordable & mass-market to luxurious and cater to every economic group. The portfolio of Bajaj Electronics includes all the leading electronic brands – LG, Panasonic, Sony, Oppo, Vivo, Dell, HP, OnePlus, Voltas, etc. to name a few.
+			</p>
+		</div>
+
+	<hr>
+
+		<h2> About Mission </h2>
+			<p>“Enhancing quality of life and bringing happiness with sustainability.”
+				Our vision has always been to be the leader in the industry and a consumer’s original choice. 
+				We strive to fulfil this everyday by being open to change and constantly improving ourselves. 
+				We, at Bajaj Electricals, also believe in enhancing the quality of life of our customers, stakeholders and of course our employees through everything that we do.
+				 We also understand the significance of sustainable growth, and hence endeavour to be a responsible company.
+				  Our core business strategy has sustainability embedded into it right from the beginning.
+				  We believe in giving back to the community and are attuned to the importance of being socially and environmentally conscious in all that we do.
+			</p>
+	</div>
+	
+<div class="feed">
+	<h2> Your Feedback </h2>
+	<div class="feed-form">
+		<form name="submit-googlesheet" method="post">
+			<input type="text" name="Name" placeholder="Name"> <br>
+			<input type="email" name="Email" placeholder="Email Address"> <br>
+			<input type="number" name="Number" placeholder="Phone Number"> <br>
+			<textarea rows="5" cols="7" name="Review" placeholder="Write your review"> </textarea><br>
+			<button type="submit"> Submit </button>
+		</form>
+		
+	</div>
+	
+</div>
+
+<footer>
+	<div class="footer-logo">
+		<a href="index.html"><img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" width="150"></a>
+	<div class="pages">
+		<h3> Pages </h3>
+		<a href=""> About Us </a> |
+		<a href=""> Services </a> |
+		<a href=""> Blogs </a> |
+		<a href="">Login </a> |
+		<a href=""> Sign Up</a>
+	</div>
+
+	<div class="doc">
+		<h3> Documents </h3>
+		<a href=""> Privacy Policies </a> |
+		<a href=""> Terms of Use </a> |
+		<a href=""> Refund Policy </a> 
+	</div>
+
+	<div class="social">
+		<h3> Follow Us </h3>
+		<a href="https://www.facebook.com/ActorSonuSood" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/SonuSood?s=20" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com/sonu_sood/" class="fa fa-instagram"></a>		
+	</div>
+
+	 
+	<hr>
+
+	<p> Copyright &copy; 2021 1stop.ai  All rights reserved </p>
+</footer>
+
+<script type="text/javascript">
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbys2yrhywcLCH4rA_xOfXspCJ-f3C_mT4F2fmhx5L28WuCVClFu2KVRp1o6aX9ipSDe/exec'
+	const form= document.forms['submit-googlesheet']
+	form.addEventListener('submit', e => {
+	e.preventDefault()
+	fetch(scriptURL, { method: 'POST', body: new FormData(form)}) .then(response => alert("Thanks for Contacting us.. We Will Contact You Soon...")) .catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+
+</html>
+
+
+
+
+
